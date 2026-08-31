@@ -28,14 +28,16 @@ The purpose of this assignment is to understand how a neural network learns a no
 ## Installation
 
 Install the required dependency using:
-
+```text
 pip install -r requirements.txt
+```
 
 ## How to Run
 
 Run the Python script:
-
+```text
 python xor_neural_network.py
+```
 
 The program trains the neural network on the XOR dataset and displays the training loss followed by the final predictions.
 
@@ -50,7 +52,7 @@ Although XOR is a simple logical problem, this assignment demonstrates how neura
 
 ## Edge Case
 
-The model may fail to learn the XOR pattern if the learning rate is unsuitable, the number of epochs is insufficient, or the network does not have enough capacity. These issues can be addressed by tuning the training configuration or modifying the network architecture.
+The model may fail to learn the XOR pattern if the learning rate is unsuitable, the number of epochs is insufficient or the network does not have enough capacity. These issues can be addressed by tuning the training configuration or modifying the network architecture.
 
 ## Assignment
 
