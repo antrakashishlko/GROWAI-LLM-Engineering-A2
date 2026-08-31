@@ -1,6 +1,6 @@
 # GROWAI LLM Engineering – Assignment 2
 
-## Neural Network XOR
+## Neural Network from Scratch: XOR Classifier
 
 This project demonstrates how a simple neural network can learn the XOR logical operation using PyTorch.
 
