@@ -1,3 +1,13 @@
+"""
+Neural Network from Scratch: XOR Classifier
+This project builds a simple 2-layer neural network in PyTorch to learn the XOR function.
+The network uses 2 input neurons, 4 hidden neurons with ReLU and 1 Sigmoid output neuron.
+It is trained using BCELoss and Adam optimization for 5000 epochs.
+The final predictions are compared with the expected XOR outputs to verify correctness.
+"""
+
+import torch
+import torch.nn as nn
 import torch
 import torch.nn as nn
 
@@ -24,6 +34,15 @@ y = torch.tensor(
     ],
     dtype=torch.float32,
 )
+
+# -----------------------------
+# Edge Case Handling
+# -----------------------------
+
+if len(X) != 4 or len(y) != 4:
+    raise ValueError(
+        "XOR dataset must contain exactly 4 input-output pairs."
+    )
 
 # -----------------------------
 # Neural Network Definition
